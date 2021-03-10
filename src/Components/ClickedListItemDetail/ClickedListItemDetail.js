@@ -14,7 +14,6 @@ import { FaYoutube,
 const ClickedListItemDetail = (props) => {
     
     const {strTeamBadge,strTeam,intFormedYear,strCountry,strSport,strGender,strStadiumThumb,strDescriptionEN,strStadiumDescription,strTwitter,strWebsite,strYoutube} = props.clickedlistData ;
-
     const get = props.clickedlistData.strGender;
         return (
             <div>
@@ -36,8 +35,7 @@ const ClickedListItemDetail = (props) => {
       }
 </div>              
                <div className="desc-text">
-               <p>{strDescriptionEN}</p>
-              
+               <p>{strDescriptionEN}</p>  
                <p>{strStadiumDescription}</p>
                </div>
                <div className="social">
