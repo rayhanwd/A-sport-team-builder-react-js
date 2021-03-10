@@ -14,6 +14,7 @@ import { FaYoutube,
 const ClickedListItemDetail = (props) => {
     
     const {strTeamBadge,strTeam,intFormedYear,strCountry,strSport,strGender,strStadiumThumb,strDescriptionEN,strStadiumDescription,strTwitter,strWebsite,strYoutube} = props.clickedlistData ;
+    const get = props.clickedlistData.strGender;
         return (
             <div>
                 <div className="banner-img">
