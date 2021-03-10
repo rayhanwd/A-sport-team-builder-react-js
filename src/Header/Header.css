@@ -1,0 +1,15 @@
+.container,ul{
+    display:flex;
+    justify-content:space-between;
+    overflow: hidden;
+}
+.logo{
+    margin-top: 20px;
+}
+ul li{
+    margin:20px 30px;
+    list-style-type: none;
+}
+li a{
+    text-decoration:none;
+}
