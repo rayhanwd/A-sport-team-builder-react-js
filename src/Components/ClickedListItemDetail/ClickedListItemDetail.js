@@ -14,6 +14,8 @@ import { FaYoutube,
 const ClickedListItemDetail = (props) => {
     
     const {strTeamBadge,strTeam,intFormedYear,strCountry,strSport,strGender,strStadiumThumb,strDescriptionEN,strStadiumDescription,strTwitter,strWebsite,strYoutube} = props.clickedlistData ;
+
+    const get = props.clickedlistData.strGender;
         return (
             <div>
                 <div className="banner-img">
@@ -29,7 +31,7 @@ const ClickedListItemDetail = (props) => {
                <h6><FaVolleyballBall /> Sport type: {strSport}</h6>
                <h6><FaWalking /> Gender: {strGender}</h6>
     </div>
-    {{strGender: "Male"} ?<img className="item-img" src={MaleTeam} alt="" srcset=""/>
+    { get?<img className="item-img" src={MaleTeam} alt="" srcset=""/>
         :<img className="item-img" src={FemaleTeam} alt="" srcset=""/>
       }
 </div>              
