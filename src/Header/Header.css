@@ -1,15 +1,18 @@
-.container,ul{
-    display:flex;
-    justify-content:space-between;
+.container, ul {
+    display: flex;
+    justify-content: space-between;
     overflow: hidden;
 }
-.logo{
+
+.logo {
     margin-top: 20px;
 }
-ul li{
-    margin:20px 30px;
+
+ul li {
+    margin: 20px 30px;
     list-style-type: none;
 }
-li a{
-    text-decoration:none;
+
+li a {
+    text-decoration: none;
 }

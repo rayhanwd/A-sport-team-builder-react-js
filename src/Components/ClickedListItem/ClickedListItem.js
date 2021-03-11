@@ -1,38 +1,34 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { useParams } from 'react-router';
 import ClickedListItemDetail from '../ClickedListItemDetail/ClickedListItemDetail';
 
 const ClickedListItem = () => {
 
-const {id} = useParams();
+    const { id } = useParams();
 
-const [List,setList] = useState([]);
-
-
+    const [List, setList] = useState([]);
 
     useEffect(() => {
 
-    const url =`https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=${id}`
+        const url = `https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=${id}`
 
-    fetch(url)
+        fetch(url)
 
-    .then(res=>res.json())
+            .then(res => res.json())
 
-    .then(data =>setList(data.teams))
+            .then(data => setList(data.teams))
 
-    },[id])
+    }, [id])
 
- 
-    
     return (
         <div>
             {
-                List.map(list => 
-                <ClickedListItemDetail 
-                clickedlistData= {list}>
-                </ClickedListItemDetail>)
-            }  
+                List.map(list =>
+                    <ClickedListItemDetail
+                        clickedlistData={list}>
+                    </ClickedListItemDetail>)
+            }
         </div>
     );
 };

@@ -12,21 +12,18 @@ function App() {
   return (
     <>
       <Router>
-    <div>
-    <Header></Header>
-      <Switch>
-        <Route exact path="/">
-          <Home></Home>
-        </Route>
-        <Route path="/id/:id">
-       <ClickedListItems></ClickedListItems>
-        </Route>
-        {/* <Route path="/about">
-          <About></About>
-        </Route> */}
-      </Switch>
-    </div>
-  </Router>
+        <div>
+          <Header></Header>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route exact path="/id/:id">
+              <ClickedListItems></ClickedListItems>
+            </Route>
+          </Switch>
+        </div>
+      </Router>
     </>
   );
 }
